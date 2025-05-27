@@ -11,22 +11,29 @@
             background-color: red;
             text-align: center;
         }
-        table, tr, th
+        table, tr, th, td
+        {
+          
+           
+            border: 1px solid red;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+         th 
+
         {
             color: white;
             background-color: red;
-            border: 1px;
-            border-collapse: collapse;
-            padding: 5px;
         }
     </style>
 </head>
 <body>
-   <h1>Aula 08 - Exercício 2</h1>
+   <h1 style="text-align: center;">Aula 08 - Exercício 2</h1>
    
     <h3>Exercício de colspan</h3>
 
-   <table>
+   <table> 
     <tr>
         <th>Dia da Semana</th>
         <th>Turma</th>
@@ -61,7 +68,7 @@
         <td>Quarta</td>
         <td>A/B</td>
         <td colspan="2">Português</td>
-        <td colspan="2">FI/PA</td>
+        <td colspan="2" style="text-align: center;">FI/PA</td>
         <td colspan="2">PA/FI</td>
     </tr>
    </table>
@@ -83,10 +90,23 @@
     <tr>
         <td rowspan="2">Domingo</td>
         <td>A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
     </tr>
 
     <tr>
         <td>B</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
     </tr>
 
     <tr>
@@ -111,9 +131,13 @@
         <td rowspan="2">Terça</td>
         <td>A</td>
         <td rowspan="2">Isabela</td>
-        <td rowspan="2" colspan="2">Jaqueline</td>
+        <td rowspan="2" colspan="2" style="text-align: center;">Jaqueline</td>
         <td rowspan="2">Vagner</td>
-        <td rowspan="2" colspan="2">Celene</td>
+        <td rowspan="2" colspan="2" style="text-align: center;">Celene</td>
+    </tr>
+
+    <tr>
+        <td>B</td>
     </tr>
    </table>
 </body>
